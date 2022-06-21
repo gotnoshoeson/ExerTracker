@@ -14,10 +14,10 @@ function App() {
       <Navbar />
       <br/>
       <Routes>
-        <Route path="/" exact component={ExercisesList} />
-        <Route path="/edit/:id" component={EditExercise} />
-        <Route path="/create" component={CreateExercises} />
-        <Route path="/user" component={CreateUsers} />
+        <Route path="/" exact element={<ExercisesList />} />
+        <Route path="/edit/:id" element={<EditExercise />} />
+        <Route path="/create" element={<CreateExercises />} />
+        <Route path="/user" element={<CreateUsers />} />
       </Routes>
     </Router>
   );
